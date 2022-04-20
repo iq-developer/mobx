@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+.todos {
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo {
+  padding: 15px;
+  background: #eee;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.todo:nth-child(odd) {
+  background: #f9f9f9;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.todo:hover {
+  background: #ddd;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.x {
+  background: none;
+  border: none;
+  float: right;
+  padding: 10px;
+  cursor: pointer;
+  padding: 5px 9px;
+  border-radius: 20px;
+}
+
+.x:hover {
+  background-color: #e17d76;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input[type="checkbox"] {
+  margin-right: 20px;
 }
