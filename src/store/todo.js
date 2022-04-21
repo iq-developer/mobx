@@ -1,4 +1,4 @@
-import { makeAutoObservable } from 'mobx';
+import { action, makeAutoObservable } from 'mobx';
 
 class Todo {
   todos = [
@@ -26,10 +26,10 @@ class Todo {
   fetchTodos() {
     fetch(`https://jsonplaceholder.typicode.com/todos/${this.todos.length + 1}`)
       .then(response => response.json())
-      .then(json => {
+      .then(action(json => {
         console.log('json: ', json)
         this.todos = [...this.todos, json];
-      })
+      }))
   }
 
 }

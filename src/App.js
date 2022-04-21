@@ -1,10 +1,17 @@
 import './App.css';
-import Todo from './Todo';
+import Todo from './components/Todo';
+import Pie from './components/Pie';
 
 function App() {
   return (
     <div className="App">
-      <Todo />
+      <div className="center-column">
+        <Todo />
+      </div>
+      <div className="right-column">
+        <Pie />
+      </div>
+
     </div>
   );
 }
