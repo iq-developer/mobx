@@ -1,11 +1,10 @@
 import { action, makeAutoObservable } from 'mobx';
+import todoData from './todoData';
 
 class Todo {
-  todos = [
-    { id: 1, title: 'Learn and implement mobX', completed: false },
-    { id: 2, title: 'Add and practise Canvas', completed: false },
-    { id: 3, title: 'Learn libraries Conva.js ect Learn libraries Conva.js ect', completed: false }
-  ];
+
+  todos = todoData;
+
   constructor() {
     makeAutoObservable(this);
   }
