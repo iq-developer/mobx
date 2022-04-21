@@ -11,7 +11,7 @@ const TodoHeader = observer(() => {
     <div className="header">
       <input className="header-input" placeholder="Title..." value={inputValue} onChange={event => setInputValue(event.target.value)} />
       <button className="add-btn" onClick={() => todo.addTodo(inputValue)}>Add todo</button>
-      {/* <button className="add-btn" onClick={() => todo.fetchTodos()}>Fetch todo</button> // just to test asyncronic query to backend */}
+      <button className="add-btn fetch-btn" onClick={() => todo.fetchTodos()}>Fetch todo</button>
     </div>
   );
 })

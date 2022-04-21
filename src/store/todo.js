@@ -30,7 +30,6 @@ class Todo {
     fetch(`https://jsonplaceholder.typicode.com/todos/${this.todos.length + 1}`)
       .then(response => response.json())
       .then(action(json => {
-        console.log('json: ', json)
         this.todos = [...this.todos, json];
       }))
   }

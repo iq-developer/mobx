@@ -34,22 +34,22 @@ const Pie = observer(() => {
     // Define arcs for graphing
     const arc = d3.arc().innerRadius(0).outerRadius(200)
 
-    const colors = d3.scaleOrdinal(['#ffa822', '#134e6f', '#ff6150', '#1ac0c6', '#dee0e6'])
+    const colors = d3.scaleOrdinal(['#414042', '#f37037'])
 
     // Define the size and position of svg
     const svg = d3.select(pieChart.current)
-      .attr('width', 600)
-      .attr('height', 600)
-      // .style('background-color','yellow')
+      .attr('width', 400)
+      .attr('height', 400)
       .append('g')
-      .attr('transform', 'translate(300,300)')
+      .attr('transform', 'translate(200,200)')
 
     // Add tooltip
     const tooldiv = d3.select('#chartArea')
       .append('div')
       .style('visibility', 'hidden')
       .style('position', 'absolute')
-      .style('background-color', 'red')
+      .style('background-color', '#eee')
+      .style('padding', '10px')
 
 
     // Draw pie
@@ -61,8 +61,6 @@ const Pie = observer(() => {
       .attr('fill', (d, i) => colors(i))
       .attr('stroke', 'white')
       .on('mouseover', (e, d) => {
-        // console.log(e)
-        // console.log(d)
 
         tooldiv.style('visibility', 'visible')
           .text(`${d.data.item}:` + `${d.data.count}`)
@@ -78,9 +76,13 @@ const Pie = observer(() => {
   })
 
   return (
-    <div id='chartArea'>
-      <svg ref={pieChart}></svg>
-    </div>
+    <>
+
+      <div id='chartArea'>
+        <svg ref={pieChart}></svg>
+      </div>
+      <h3>Completed and not completed tasks ratio</h3>
+    </>
   )
 })
 
