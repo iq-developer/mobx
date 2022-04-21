@@ -12,14 +12,13 @@
 }
 
 .header {
-  background-color: #E7E9EB;
+  background-color: #414042;
   padding: 30px 40px;
   color: white;
   text-align: center;
   height: 40px;
 }
 
-/* Style the input */
 input.header-input {
   margin: 0;
   border: none;
@@ -30,12 +29,10 @@ input.header-input {
   font-size: 16px;
 }
 
-/* Style the "Add" button */
 .add-btn {
   padding: 10px;
   width: 25%;
   background: #d9d9d9;
-  color: #555;
   float: left;
   text-align: center;
   font-size: 16px;
@@ -44,12 +41,8 @@ input.header-input {
   border: none;
 }
 
-.addBtn:hover {
+.add-btn:hover {
   background-color: #bbb;
-}
-
-.todos {
-
 }
 
 .todo {
@@ -73,9 +66,9 @@ input.header-input {
   background: none;
   border: none;
   float: right;
-  padding: 10px;
   cursor: pointer;
-  padding: 5px 9px;
+  padding: 5px 11px 8px;
+  margin-top: -3px;
   border-radius: 20px;
 }
 

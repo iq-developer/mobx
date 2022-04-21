@@ -10,8 +10,12 @@ class Todo {
     makeAutoObservable(this);
   }
 
-  addTodo(todo) {
-    this.todos.push(todo);
+  addTodo(title) {
+    this.todos.push({
+      id: this.todos.length + 1,
+      title: title,
+      completed: false
+    });
   }
 
   removeTodo(id) {
