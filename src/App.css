@@ -1,6 +1,7 @@
 .App {
   display: flex;
   justify-content: flex-end;
+  flex-direction: column;
 }
 
 .center-column {
@@ -8,8 +9,7 @@
 }
 
 .right-column {
-  width: 600px;
-  padding: 40px;
+  padding: 20px 40px;
 }
 
 .header {
@@ -24,7 +24,7 @@ input.header-input {
   margin: 0;
   border: none;
   border-radius: 0;
-  width: 70%;
+  width: 30%;
   padding: 10px;
   float: left;
   font-size: 16px;
@@ -32,7 +32,6 @@ input.header-input {
 
 .add-btn {
   padding: 10px;
-  width: 15%;
   background: #d9d9d9;
   float: left;
   text-align: center;
@@ -43,16 +42,18 @@ input.header-input {
 }
 
 .fetch-btn {
-  margin-left: 40px;
-  width: auto;
+  float: right;
+  margin-left: 30px;
 }
 
 .add-btn:hover {
-  background-color: #bbb;
+  background-color: #f37037;
+  color: white;
 }
 
 .todo {
   padding: 15px;
+  padding-left: 40px;
   background: #eee;
 }
 
@@ -79,10 +80,45 @@ input.header-input {
 }
 
 .x:hover {
-  background-color: #e17d76;
+  background-color: #f37037;
   color: white;
 }
 
 input[type="checkbox"] {
   margin-right: 20px;
+}
+.dark-gray {
+  color: #414042;
+}
+
+.gray {
+  color: #ccc;
+}
+
+.orange {
+  color: #f37037;
+}
+
+
+@media screen and (min-width: 640px) {
+  input.header-input {
+    width: 50%;
+  }
+
+  .add-btn {
+    width: 25%;
+  }
+
+  .fetch-btn {
+    width: 15%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .right-column {
+    width: 600px;
+  }
+  .App {
+    flex-direction: row;
+  }
 }

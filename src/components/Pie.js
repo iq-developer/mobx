@@ -77,11 +77,11 @@ const Pie = observer(() => {
 
   return (
     <>
-
+      <h3 className="gray"><span className="orange">Completed</span> and <span className="dark-gray"> not completed</span> tasks ratio</h3>
       <div id='chartArea'>
         <svg ref={pieChart}></svg>
       </div>
-      <h3>Completed and not completed tasks ratio</h3>
+
     </>
   )
 })
