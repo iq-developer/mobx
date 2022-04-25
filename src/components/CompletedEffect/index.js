@@ -1,14 +1,15 @@
 import { useState, useRef, useEffect } from 'react';
 import Konva from "konva";
 import { Stage, Layer, Star } from 'react-konva';
-import todo from '../store/todo';
+import todo from '../../store/todo';
 import { observer } from 'mobx-react-lite';
+import s from './style.module.css';
 
 function generateShapes() {
   return [...Array(100)].map((_, i) => ({
     id: i.toString(),
     x: Math.random() * window.innerWidth,
-    y: Math.random() * window.innerHeight - window.innerHeight - 10, 
+    y: Math.random() * window.innerHeight - window.innerHeight - 10,
     rotation: Math.random() * 180,
   }));
 }
@@ -70,7 +71,7 @@ const CompletedEffect = observer(() => {
 
 
   return (
-    <Stage className="stage" width={window.innerWidth} height={window.innerHeight} style={{ display: blink ? 'block' : 'none' }}>
+    <Stage className={s.stage} width={window.innerWidth} height={window.innerHeight} style={{ display: blink ? 'block' : 'none' }}>
       <Layer ref={rectRef}>
         {stars.map((star) => (
           <Star

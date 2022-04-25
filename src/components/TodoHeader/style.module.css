@@ -1,0 +1,56 @@
+.header {
+  background-color: #414042;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+  height: 40px;
+}
+
+input.headerInput {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 30%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+.addBtn {
+  padding: 10px;
+  background: #d9d9d9;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: none;
+}
+
+.fetchBtn {
+  float: right;
+  margin-left: 30px;
+}
+
+.addBtn:hover {
+  background-color: #f37037;
+  color: white;
+}
+
+input[type="checkbox"] {
+  margin-right: 20px;
+}
+
+@media screen and (min-width: 640px) {
+  input.headerInput {
+    width: 50%;
+  }
+
+  .addBtn {
+    width: 25%;
+  }
+
+  .fetchBtn {
+    width: 15%;
+  }
+}

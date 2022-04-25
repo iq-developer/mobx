@@ -1,15 +1,15 @@
-import '../App.css';
-import todo from '../store/todo';
+import todo from "../../store/todo";
 import { observer } from 'mobx-react-lite';
+import s from "./style.module.css";
 
 const Todo = observer(() => {
   return (
     <>
       {todo.todos.map((item) =>
-        <div className="todo" key={item.id}>
+        <div className={s.todo} key={item.id}>
           <input type="checkbox" checked={item.completed} onChange={() => todo.toggleTodo(item.id)} />
-          <span className={item.completed ? "completed" : ""}>{item.title}</span>
-          <button className="x" onClick={() => todo.removeTodo(item.id)}>x</button>
+          <span className={item.completed ? s.completed : ""}>{item.title}</span>
+          <button className={s.x} onClick={() => todo.removeTodo(item.id)}>x</button>
         </div>
       )}
     </>

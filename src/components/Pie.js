@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import * as d3 from 'd3';
 import todo from '../store/todo';
 import { observer } from 'mobx-react-lite';
@@ -79,7 +79,7 @@ const Pie = observer(() => {
 
   return (
     <>
-      <h3 className="gray"><span className="orange">Completed</span> and <span className="dark-gray"> not completed</span> tasks ratio</h3>
+      <h3 className="gray"><span className="orange">Completed</span> and <span className="darkGray"> not completed</span> tasks ratio</h3>
       <div id='chartArea'>
         <svg ref={pieChart}></svg>
       </div>

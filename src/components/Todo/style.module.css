@@ -1,0 +1,32 @@
+.todo {
+  padding: 15px;
+  padding-left: 40px;
+  background: #eee;
+}
+
+.todo:nth-child(odd) {
+  background: #f9f9f9;
+}
+
+.todo:hover {
+  background: #ddd;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.x {
+  background: none;
+  border: none;
+  float: right;
+  cursor: pointer;
+  padding: 5px 11px 8px;
+  margin-top: -3px;
+  border-radius: 20px;
+}
+
+.x:hover {
+  background-color: #f37037;
+  color: white;
+}

@@ -8,11 +8,11 @@ function App() {
   return (
     <div className="App">
       <CompletedEffect />
-      <div className="center-column">
+      <div className="centerColumn">
         <TodoHeader />
         <Todo />
       </div>
-      <div className="right-column">
+      <div className="rightColumn">
         <Pie />
       </div>
     </div>

@@ -4,90 +4,17 @@
   flex-direction: column;
 }
 
-.center-column {
+.centerColumn {
   width: 100%;
 }
 
-.right-column {
+.rightColumn {
   padding: 20px 40px;
 }
 
-.header {
-  background-color: #414042;
-  padding: 30px 40px;
-  color: white;
-  text-align: center;
-  height: 40px;
-}
+/* Colors */
 
-input.header-input {
-  margin: 0;
-  border: none;
-  border-radius: 0;
-  width: 30%;
-  padding: 10px;
-  float: left;
-  font-size: 16px;
-}
-
-.add-btn {
-  padding: 10px;
-  background: #d9d9d9;
-  float: left;
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
-  border: none;
-}
-
-.fetch-btn {
-  float: right;
-  margin-left: 30px;
-}
-
-.add-btn:hover {
-  background-color: #f37037;
-  color: white;
-}
-
-.todo {
-  padding: 15px;
-  padding-left: 40px;
-  background: #eee;
-}
-
-.todo:nth-child(odd) {
-  background: #f9f9f9;
-}
-
-.todo:hover {
-  background: #ddd;
-}
-
-.completed {
-  text-decoration: line-through;
-}
-
-.x {
-  background: none;
-  border: none;
-  float: right;
-  cursor: pointer;
-  padding: 5px 11px 8px;
-  margin-top: -3px;
-  border-radius: 20px;
-}
-
-.x:hover {
-  background-color: #f37037;
-  color: white;
-}
-
-input[type="checkbox"] {
-  margin-right: 20px;
-}
-.dark-gray {
+.darkGray {
   color: #414042;
 }
 
@@ -99,28 +26,7 @@ input[type="checkbox"] {
   color: #f37037;
 }
 
-/* Konva */
-
-.stage {
-  position: absolute;
-  top: 0;
-}
-
 /* Media */
-
-@media screen and (min-width: 640px) {
-  input.header-input {
-    width: 50%;
-  }
-
-  .add-btn {
-    width: 25%;
-  }
-
-  .fetch-btn {
-    width: 15%;
-  }
-}
 
 @media screen and (min-width: 1200px) {
   .right-column {
