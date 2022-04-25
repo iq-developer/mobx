@@ -1,3 +1,5 @@
+@import "mixins.scss";
+
 .App {
   display: flex;
   justify-content: flex-end;
@@ -28,7 +30,7 @@
 
 /* Media */
 
-@media screen and (min-width: 1200px) {
+@include lg {
   .right-column {
     width: 600px;
   }

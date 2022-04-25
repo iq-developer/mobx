@@ -1,7 +1,7 @@
 import todo from '../../store/todo';
 import { observer } from 'mobx-react-lite';
 import { useState } from 'react';
-import s from "./style.module.css";
+import s from "./style.module.scss";
 
 const TodoHeader = observer(() => {
 

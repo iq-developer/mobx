@@ -1,19 +1,21 @@
+@import "../../mixins.scss";
+
 .header {
   background-color: #414042;
   padding: 30px 40px;
   color: white;
   text-align: center;
   height: 40px;
-}
 
-input.headerInput {
-  margin: 0;
-  border: none;
-  border-radius: 0;
-  width: 30%;
-  padding: 10px;
-  float: left;
-  font-size: 16px;
+  .headerInput {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 30%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
 }
 
 .addBtn {
@@ -41,7 +43,7 @@ input[type="checkbox"] {
   margin-right: 20px;
 }
 
-@media screen and (min-width: 640px) {
+@include md {
   input.headerInput {
     width: 50%;
   }

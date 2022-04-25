@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Todo from './components/Todo';
 import TodoHeader from './components/TodoHeader';
 import Pie from './components/Pie';
