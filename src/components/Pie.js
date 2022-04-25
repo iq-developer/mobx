@@ -23,6 +23,8 @@ const Pie = observer(() => {
     ]
   }
 
+  console.log('todo.todos1: ', todo.todos)
+
   const data = getData(todo.todos);
 
   const pieChart = useRef()
