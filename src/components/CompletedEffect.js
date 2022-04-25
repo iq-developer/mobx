@@ -8,7 +8,7 @@ function generateShapes() {
   return [...Array(100)].map((_, i) => ({
     id: i.toString(),
     x: Math.random() * window.innerWidth,
-    y: Math.random() * window.innerHeight - window.innerHeight,
+    y: Math.random() * window.innerHeight - window.innerHeight - 10, 
     rotation: Math.random() * 180,
   }));
 }
@@ -17,7 +17,7 @@ const INITIAL_STATE = generateShapes();
 
 const CompletedEffect = observer(() => {
   const [stars, setStars] = useState(INITIAL_STATE);
-  const [blink, setBlink] = useState(true);
+  const [blink, setBlink] = useState(false);
   const [prevСompletedCount, setPrevСompletedCount] = useState(0);
   const rectRef = useRef();
 
